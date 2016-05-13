@@ -1,4 +1,4 @@
-Definition Admit {A} : A. admit. Defined.
+Definition Admit {A} : A. admit. Admitted.
 
 Ltac rewr_assumption := idtac; match goal with
                           | [R: _ = _ |- _ ] => first [rewrite R| rewrite <- R]
